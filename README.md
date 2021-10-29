@@ -1,3 +1,18 @@
+backend build plan:
+0) finish out pkgjson per RM: dependencies, and scripts & look at db schema: (`./data/database.db3`)
+1) finish out server using express (something no employer will ever take seriously - HA!)
+2) tie server to index 
+    -maybe listen to song
+3)Run the puppy
+    -console.log here to make sure port is open and not being unintentionally used - debug
+4) So the break down has been made so just fill it out. 
+    Actions: Build the tools to play with database - actions-model
+            Build a validation system that checks client's request - actions-middleware
+            Build router to handle the clients request, and interact/communicate with with database
+    Projects: Pretty much the same agenda however actions was for adding to the database and projects is just the sum of the database.
+
+5) After Actions and Projects are built, then tie it all together in the server.js. and since there's no front end, use thunderclient to try succesfully get, post, put and delete entries in the database.
+
 # Sprint Challenge Instructions
 
 **Read these instructions carefully. Understand exactly what is expected _before_ starting this Sprint Challenge.**
