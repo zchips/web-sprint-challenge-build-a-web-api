@@ -16,5 +16,11 @@ server.use((req, res, next, error) => {
 
 
 
+const ActionsRouter = require('./actions/actions-router');
+const ProjectRouter = require ('./projects/projects-router');
+
+server.use("/api/actions", ActionsRouter);
+server.use("/api/projects", ProjectRouter);
+
 
 module.exports = server;

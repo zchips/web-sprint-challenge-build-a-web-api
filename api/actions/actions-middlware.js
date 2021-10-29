@@ -20,7 +20,7 @@ const validateId = async (req, res, next) => {
         const action  = await Action.get(id);
                     console.log(action);
                     if(action){
-                        action = req.action;
+                         req.action = action;
                         next();
                     }else{
                         res.status(404).json({message: 'That action is NOT active, completed, or removed. Please try again.'})

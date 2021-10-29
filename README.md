@@ -6,9 +6,9 @@ backend build plan:
 3)Run the puppy
     -console.log here to make sure port is open and not being unintentionally used - debug
 4) So the break down has been made so just fill it out. 
-    Actions: Build the tools to play with database - actions-model
-            Build a validation system that checks client's request - actions-middleware
-            Build router to handle the clients request, and interact/communicate with with database
+    Actions: See the tools available to play with database - actions-model
+            Build a validation system that checks client's request using tools from actions-model  - actions-middleware
+            Build router to handle the clients request, and interact/communicate with with database - actions-router
     Projects: Pretty much the same agenda however actions was for adding to the database and projects is just the sum of the database.
 
 5) After Actions and Projects are built, then tie it all together in the server.js. and since there's no front end, use thunderclient to try succesfully get, post, put and delete entries in the database.
