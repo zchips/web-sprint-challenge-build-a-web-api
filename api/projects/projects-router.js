@@ -10,7 +10,8 @@ const router = express.Router();
 router.get("/", (req, res, next)=>{
     Project.get()
     .then(projects => {
-        res.status(200).json(project)})
+        res.status(200).json(projects)
+    })
     .catch(next)
 });
 
@@ -32,7 +33,6 @@ router.post("/", Post, (req, res, next)=>{
 
 
 router.put("/:id", Id, activeProj, (req, res, next)=>{
-
     Project.update(req.params.id, req.body).then((projects)=> {
         res.json(projects)
     }).catch(next)
@@ -43,7 +43,6 @@ router.get("/:id/actions", Id, (req, res, next)=>{
     Project.getProjectActions(req.params.id).then(actions =>{
         res.status(200).json(actions)
     })
-
     .catch(next)
 });
 

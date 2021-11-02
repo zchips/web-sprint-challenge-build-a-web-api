@@ -22,7 +22,8 @@ const Id = async (req, res, next) => {
 
         if(project){
             req.project = project;
-            next();}}
+            next();}
+        else{res.status(404).json({message: 'not findign this project check back later or try again'})}}
     catch(error){
         next(error)}};
 

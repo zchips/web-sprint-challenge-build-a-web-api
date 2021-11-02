@@ -26,6 +26,7 @@ router.put("/:id", validateAction, validateId, (res, req, next) => {
     .then(action => {
         res.status(200).json(action)
     }).catch(next);})
+
 router.delete("/:id", validateId, (req, res, next) => {
     Action.remove(req.params.id)
     .then(action => {
